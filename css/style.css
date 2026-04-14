@@ -95,7 +95,24 @@ h1,h2,h3,h4,h5{font-family:var(--font-heading);text-transform:uppercase;letter-s
 .affiliate-disclosure p{font-size:.8rem;color:var(--text-muted);text-align:center}
 .footer-bottom{text-align:center;padding-top:1.5rem;margin-top:1.5rem;border-top:1px solid var(--border-color);max-width:var(--max-width);margin-left:auto;margin-right:auto}
 .footer-bottom p{font-size:.8rem;color:var(--text-muted)}
+/* ===== PROS/CONS ===== */
+.pros-cons{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1rem 0}
+.pros,.cons{padding:1rem;border-radius:var(--radius)}
+.pros{background:rgba(39,174,96,.1);border:1px solid rgba(39,174,96,.3)}
+.cons{background:rgba(192,57,43,.1);border:1px solid rgba(192,57,43,.3)}
+.pros h4{color:#27ae60;margin-bottom:.5rem}
+.cons h4{color:var(--accent-light);margin-bottom:.5rem}
+.pros li,.cons li{font-size:.9rem;margin-bottom:.3rem}
+.pros ul,.cons ul{list-style:none;padding:0;margin:0}
+
+/* ===== CROSS-LINKS BOX ===== */
+.cross-links-box{background:var(--card-bg);border:1px solid var(--border-color);border-radius:var(--radius);padding:1.2rem 1.5rem;margin:2rem auto;max-width:var(--max-width)}
+.cross-links-box strong{font-size:.95rem;color:var(--white)}
+.cross-links-box ul{margin:.6rem 0 0 1.2rem;font-size:.92rem;line-height:1.8;list-style:disc}
+.cross-links-box a{color:var(--accent-light)}
+.cross-links-box a:hover{color:var(--accent-yellow)}
+
 .network-links{background:#1a1a1a;padding:1.2rem;text-align:center;font-size:.82rem;color:#888;border-top:1px solid #333}
 .network-links strong{color:#ccc}.network-links a{color:#aaa;margin:0 .5rem}
-@media(max-width:900px){.content-grid{grid-template-columns:1fr}.sidebar{order:-1}}
+@media(max-width:900px){.content-grid{grid-template-columns:1fr}.sidebar{order:-1}.pros-cons{grid-template-columns:1fr}}
 @media(max-width:768px){.nav-toggle{display:block}.main-nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--charcoal-light);border-bottom:3px solid var(--accent);padding:1rem}.main-nav.open{display:block}.main-nav ul{flex-direction:column;gap:0}.main-nav a{padding:.7rem 1rem;border-radius:0;border-bottom:1px solid var(--border-color)}.hero h1{font-size:1.8rem}.page-hero h1{font-size:1.6rem}.header-inner{position:relative}.category-grid,.brand-grid{grid-template-columns:1fr}.comparison-table{font-size:.8rem}.comparison-table th,.comparison-table td{padding:.5rem}}
