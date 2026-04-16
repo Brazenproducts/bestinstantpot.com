@@ -116,3 +116,14 @@ h1,h2,h3,h4,h5{font-family:var(--font-heading);text-transform:uppercase;letter-s
 .network-links strong{color:#ccc}.network-links a{color:#aaa;margin:0 .5rem}
 @media(max-width:900px){.content-grid{grid-template-columns:1fr}.sidebar{order:-1}.pros-cons{grid-template-columns:1fr}}
 @media(max-width:768px){.nav-toggle{display:block}.main-nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--charcoal-light);border-bottom:3px solid var(--accent);padding:1rem}.main-nav.open{display:block}.main-nav ul{flex-direction:column;gap:0}.main-nav a{padding:.7rem 1rem;border-radius:0;border-bottom:1px solid var(--border-color)}.hero h1{font-size:1.8rem}.page-hero h1{font-size:1.6rem}.header-inner{position:relative}.category-grid,.brand-grid{grid-template-columns:1fr}.comparison-table{font-size:.8rem}.comparison-table th,.comparison-table td{padding:.5rem}}
+
+
+/* Buy Button Styles */
+.buy-btn{display:inline-block;padding:12px 24px;border-radius:6px;font-weight:700;font-size:15px;text-decoration:none;text-align:center;transition:opacity .2s,transform .1s;margin:8px 4px;cursor:pointer}
+.buy-btn:hover{opacity:.85;transform:translateY(-1px)}
+.buy-btn-primary{background:#e8600a;color:#fff !important}
+.buy-btn-amazon{background:#f0c14b;color:#111 !important;border:1px solid #a88734}
+.buy-btn-store{background:#2563eb;color:#fff !important}
+.buy-btn-bullstrap{background:#1a1a1a;color:#fff !important}
+.card-buttons{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;align-items:center}
+.card-buttons a{flex:1;min-width:120px;text-align:center;font-size:13px;padding:10px 12px}
